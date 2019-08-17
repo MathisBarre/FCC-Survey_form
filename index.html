@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>FFC : Survey form</title>
+
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <main>
+      <h1 id="title">Survey form about webdeveloper</h1>
+      <p id="description">Help us to view your needs to make better products !</p>
+      <form id="survey-form">
+         <fieldset>
+            <legend>First of all : let's talk about you.</legend>
+            <div class="form-items">
+               <label for="name" id="name-label">Name</label>
+               <input type="text" name="name" id="name" placeholder="Your answer" required>
+            </div>
+            <div class="form-items">
+               <label for="email" id="email-label">E-mail</label>
+               <input type="email" name="email" id="email" placeholder="Your answer" required>
+            </div>
+            <div class="form-items">
+               <label for="number" id="number-label">Age</label>
+               <input type="number" name="age" id="number" placeholder="Your answer" required min="13" max="150">
+            </div>
+            <div class="form-items">
+               <label for="tel">Phone number</label>
+               <input type="tel" name="tel" id="tel" placeholder="Your answer" required>
+            </div>
+            <div class="form-items">
+               <label for="dropdown">Type of developer</label>
+               <select name="developer-type" id="dropdown" placeholder="Your answer" required>
+                  <option value="front-end">Front-end developer</option>
+                  <option value="Back-end">Back-end developer</option>
+                  <option value="Full-stack">Full-stack developer</option>
+               </select>
+            </div>
+         </fieldset>
+
+         <fieldset>
+            <legend>What is your favorite langage ?</legend>
+            <div class="form-items">
+               <input type="radio" name="langage" id="langage-HTML-CSS" value="HTML-CSS">
+               <label for="langage-HTML-CSS">HTML-CSS</label>
+            </div>
+
+            <div class="form-items">
+               <input type="radio" name="langage" id="langage-Javascript" value="Javascript">
+               <label for="langage-Javascript">Javascript</label>
+            </div>
+
+            <div class="form-items">
+               <input type="radio" name="langage" id="langage-C" value="C">
+               <label for="langage-C">C</label>
+            </div>
+
+            <div class="form-items">
+               <input type="radio" name="langage" id="langage-C++" value="C++">
+               <label for="langage-C++">C++</label>
+            </div>
+
+            <div class="form-items">
+               <input type="radio" name="langage" id="langage-Javascript" value="Ruby">
+               <label for="langage-Ruby">Ruby</label>
+            </div>
+
+         </fieldset>
+
+         <fieldset>
+            <legend>Which programming paradigm do you use?</legend>
+
+            <div class="form-items">
+               <input type="checkbox" name="functional" id="functional" value="functional">
+               <label for="functional">Functionnal paradigm</label>
+            </div>
+            <div class="form-items">
+               <input type="checkbox" name="object" id="object" value="object">
+               <label for="object">Object oriented paradigm</label>
+            </div>
+
+            <div class="form-items">
+               <input type="checkbox" name="imperative" id="imperative" value="imperative">
+               <label for="imperative">Imperative paradigm</label>
+            </div>
+
+
+         </fieldset>
+         <fieldset>
+            <legend>Additionnal comment</legend>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+         </fieldset>
+
+         <input type="submit" value="Submit" id="submit">
+      </form>
+   </main>
+
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
